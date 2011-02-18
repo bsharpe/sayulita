@@ -1,0 +1,48 @@
+-- READ: http://developer.anscamobile.com/content/configuring-projects
+-- for more information about this
+
+settings =
+{
+  -- 
+  -- Orientation options
+  orientation =
+  {
+    default = "portrait",
+    content = "portrait", -- locks Corona's content
+    supported =
+    {
+      -- "landscapeLeft", "landscapeRight", "portrait", "portraitUpsideDown",
+      "portrait", "portraitUpsideDown",
+    },
+  }, 
+  -- 
+  -- iPhone specific options
+  iphone =
+  {
+    plist =
+    {
+      -- UIRequiredDeviceCapabilities = "magnetometer",
+      UIPrerenderedIcon = false,
+    },
+  },
+  
+  -- 
+  -- Android specific options
+  android =
+  {
+    versionCode = "3"
+  },
+
+  androidPermissions =
+  {
+    -- "android.permission.ACCESS_FINE_LOCATION",
+    -- "android.permission.INTERNET"
+  },
+
+  -- 
+  -- iPhone specific options
+  build =
+  {
+    -- custom = "a1234",
+  }
+}
