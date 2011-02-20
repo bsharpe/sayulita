@@ -1,9 +1,30 @@
 --[[ 
 
-extensions.lua v0.1  FEB-29-2011
+extensions.lua v0.1  FEB-19-2011
   Copyright (c) 2011 Ben Sharpe
   
-stringify can save table to a string and restore them from that string.
+extensions provides some extended functionality to standard Lua classes.
+
+table:
+  table.tostring()    <-- returns a string of a table so you can print it to see what it looks like
+  table.serialize()   <-- returns a savable string of a table
+  table.deserialize() <-- can convert a saved string into a table again
+  
+string:
+  string.split(sep)  
+    splits a string into parts determined by a separator.
+    e.g.
+      a = "this,is,a,test"
+      b = a:split(',')
+      print(b:tostring()) 
+        this
+        is
+        a
+        test
+        
+        
+table.serialize()
+  can save a table to a string that can be used to create another table from that string.
 anything having a 'nil' value is not stored.
 
 the format of the string is 1 line per element
@@ -19,7 +40,7 @@ part 5 - is the type of the value ['s','n','b','t'] for String, Numeric, Boolean
 part 6 - is the value for this table element.   If the type is 't' this is the index to the subtable.
 
 e.g.
-require('stringify')
+require('framework/extensions')
 
 table:serialize({1,2,3,4}) -> produces
   --0.1

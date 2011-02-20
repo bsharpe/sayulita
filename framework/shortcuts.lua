@@ -4,7 +4,6 @@ module(..., package.seeall)
 from crawlspace.lua
   https://github.com/AdamBuchweitz/CrawlSpaceLib
 
-
 Use these global variables to position your elements. They are dynamic
 to all resolutions. Android devices are usually taller, so use screenY to
 set the position where you expect 0 to be. The iPad is wider than iPhones,
@@ -53,7 +52,7 @@ display.tl = display.TopLeftReferencePoint
 display.tc = display.TopCenterReferencePoint
 display.tr = display.TopRightReferencePoint
 display.cl = display.CenterLeftReferencePoint
-display.c  = display.CenterReferencePoint
+display.cc = display.CenterReferencePoint
 display.cr = display.CenterRightReferencePoint
 display.bl = display.BottomLeftReferencePoint
 display.bc = display.BottomCenterReferencePoint
