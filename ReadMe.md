@@ -18,8 +18,7 @@ Scene management
 originally posted to the Corona Code Exchange by Wizem on OCT-21-2010 
 
 ### shortcuts
-originally part of Adam Buchweitz's _CrawspaceLib_
-https://github.com/AdamBuchweitz/CrawlSpaceLib
+originally part of Adam Buchweitz's [_CrawspaceLib_](https://github.com/AdamBuchweitz/CrawlSpaceLib)
 
 ### table serialization extensions
 Inspired by serialization code posted by Tony Finch, Wed, 11 Nov 2009 to the lua-users usenet group
